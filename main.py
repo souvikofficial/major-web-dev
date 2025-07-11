@@ -19,6 +19,10 @@ def read_root():
 def get_teas ():
     return teas
 
+@app.get("/teaswithdiffflavours")
+def get_teas ():
+    return teas
+
 @app.post ("/teas")
 def add_tea(tea : Tea):
     teas.append(tea)
